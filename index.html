@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+ <link rel="stylesheet" href="style.css">
+
+  <title>Lutfi Angga - Portofolio</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <!-- Insert your image, according to the example size of the portfolio -->
+            <img src="assets/img/ft.png" alt="">
+          </div>
+        </div>
+
+        <h2 class="profile__name">Lutfi Angga Dwi Cahya</h2>
+        <h3 class="profile__profession">Graphic Designer | Web developer | Photographer | Video Editor</h3>
+
+        <ul class="profile__social">
+          <a href="https://www.instagram.com/cahyadwii__" target="_blank" class="profile__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lutfi-angga" target="_blank" class="profile__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="https://dribbble.com/cahyadwii__" target="_blank" class="profile__social-link">
+            <i class="ri-dribbble-line"></i>
+          </a>
+        </ul>
+      </div>
+
+      <!-- <div class="profile__info grid">
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">0</h3>
+          <p class="profile__info-description">
+            Years of <br> work
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">0</h3>
+          <p class="profile__info-description">
+            Completed <br> projects
+          </p>
+        </div>
+        <div class="profile__info-group">
+          <h3 class="profile__info-number">0</h3>
+          <p class="profile__info-description">Satisfied <br> customers</p>
+        </div> -->
+      </div>
+
+      <div class="profile__buttons">
+        <!-- Insert your CV -->
+        <a download="" href="assets/pdf/cv.pdf" target="_blank" class="button">
+          Download CV <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <!-- Insert a real number plus country code -->
+          <a href="https://api.whatsapp.com/send?phone=62895615443700&text=Hello, Lutfi!" target="_blank" class="button button__small button__gray">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <!-- Insert your brand name or profile -->
+          <a href="#" class="button button__small button__gray">
+            <i class="ri-add-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <div class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projects
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Skills
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects-filter">  
+        <div class="projects__content grid filters__active" data-content id="projects">
+          
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/portofolio-1.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Graphic Design</span>
+                <h3 class="projects__title">Black Yellow Burger Box Packaging</h3>
+                <a href="https://dribbble.com/shots/17880328-Black-Yellow-Burger-Box" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/portofolio-2.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Graphic Design</span>
+                <h3 class="projects__title">All White Burger Box Packaging</h3>
+                <a href="https://dribbble.com/shots/17880335-All-White-Burger-Packaging" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/portofolio-3.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Graphic Design</span>
+                <h3 class="projects__title">Ramadhan Story</h3>
+                <a href="https://dribbble.com/shots/17880296-Ramadhan-Story" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/portofolio-4.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Graphic Design</span>
+                <h3 class="projects__title">Sneaker Custom Wayang Indonesian Traditional Art</h3>
+                <a href="https://dribbble.com/shots/17880351-Sneaker-Custom-Wayang-Indonesian-Traditional-Art" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/prewed-1.png" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Video</span>
+                <h3 class="projects__title">Prewedding Video</h3>
+                <a href="https://www.tiktok.com/@cahyadwii__/video/7259619050165210386?is_from_webapp=1&sender_device=pc&web_id=7211475979980670466" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/web-1.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Developer</span>
+                <h3 class="projects__title">Website Pajak Kendaraan</h3>
+                <a href="https://projectereliye.000webhostapp.com/" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/logo.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Logo Design</span>
+                <h3 class="projects__title">Logo Nyes Nyes Ice Cream</h3>
+                <a href="https://www.linkedin.com/posts/lutfi-angga_logo-desain-activity-7089784042593685504-zTb0?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/brosur.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Brochure Design</span>
+                <h3 class="projects__title">Brosur Nyes Nyes Ice Cream</h3>
+                <a href="https://www.linkedin.com/posts/lutfi-angga_poster-desain-activity-7089787825432252416-IT9X?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/oc.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Graphic Design</span>
+                <h3 class="projects__title">Omah Creativa Mockup Implementation</h3>
+                <a href="https://www.linkedin.com/posts/lutfi-angga_mini-project-activity-7089826049273856000-mMBi?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/1.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Logo Design</span>
+                <h3 class="projects__title">Redesain logo Batik TV Part#1</h3>
+                <a href="https://www.linkedin.com/posts/lutfi-angga_redesain-logo-batik-tv1-activity-7090354547302309888-Q9qT?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/7.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Logo Design</span>
+                <h3 class="projects__title">Redesain logo Batik TV Part#2</h3>
+                <a href="https://www.linkedin.com/posts/lutfi-angga_redesain-logo-batik-tv2-activity-7090355344660471808-Ow95?utm_source=share&utm_medium=member_desktop" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/web-2.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">Web Design</span>
+                <h3 class="projects__title">Prototype Desain Website Pajak Kita</h3>
+                <a href="https://www.figma.com/proto/jJDYbztOykKmUmSZpJEnwx/Pajak-kita?page-id=0%3A1&type=design&node-id=1-2&viewport=142%2C232%2C0.09&t=TX9yMHMkwnA8268F-1&scaling=contain&starting-point-node-id=1%3A2&mode=design" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+            <img src="assets/img/portfolio/web-3.jpg" alt="" class="projects__img">
+
+            <div class="projects__modal">
+              <div>
+                <span class="projects__subtitle">App Design</span>
+                <h3 class="projects__title">Prototype Desain Aplikasi HUMID</h3>
+                <a href="https://www.figma.com/proto/Ovj72j90WGHdm6uKBDOWcn/Untitled?page-id=0%3A1&type=design&node-id=101-135&viewport=526%2C388%2C0.39&t=UkzylhsIRFNYTXSN-1&scaling=min-zoom&starting-point-node-id=101%3A135&mode=design" target="_blank" class="projects__button button button__small">
+                  <i class="ri-link"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        </div>
+        <div class="pagination" id="pagination">
+          <!-- Pagination buttons will be inserted here -->
+        </div> 
+      </div>
+      
+    <!--=============== SKILLS ===============-->
+    <div class="skills__content grid" data-content id="skills">
+
+        <div class="skills__area">
+        <h3 class="skills__title">Graphic Design</h3>
+
+        <div class="skills__box">
+          <div class="skills__group">
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Corel Draw</h3>
+                <span class="skills__level">Advanced</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Photoshop</h3>
+                <span class="skills__level">Basic</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Canva</h3>
+                <span class="skills__level">Advanced</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Adobe XD</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Figma</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Premiere Pro</h3>
+                <span class="skills__level">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="skills__area">
+        <h3 class="skills__title">Web Developer</h3>
+
+        <div class="skills__box">
+          <div class="skills__group">
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">HTML</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">CSS</h3>
+                <span class="skills__level">basic</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">Bootstrap</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__group">
+             <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">PHP</h3>
+                <span class="skills__level">Basic</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <i class="ri-checkbox-circle-line"></i>
+
+              <div>
+                <h3 class="skills__name">MySQL</h3>
+                <span class="skills__level">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Lutfi Angga Dwi Cahya
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="main.js"></script>
+</body>
+
+</html>
