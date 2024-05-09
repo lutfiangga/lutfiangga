@@ -3,6 +3,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/lutfiangga?label=Follow&style=social)](https://github.com/lutfiangga/?tab=follow)
 [![Gmail Badge](https://img.shields.io/badge/-luthfieangga31@gmail.com-c14438?style=social&logo=Gmail&logoColor=red&link=mailto:luthfieangga31@gmail.com)](mailto:luthfieangga31@gmail.com)
 [![LinkedIn Badge](https://img.shields.io/badge/-Lutfi%20Angga-blue?style=social&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/luthfiee-angga/?tab=follow)](https://www.linkedin.com/in/luthfiee-angga/)
+[![Figma Badge](https://img.shields.io/badge/-Lutfi%20Angga-red?style=social&logo=figma&logoColor=black&link=https://www.figma.com/@Luphiee/?tab=follow)](https://www.figma.com/@Luphiee)
 [![Dribbble Badge](https://img.shields.io/badge/-Lutfi%20Angga-red?style=social&logo=Dribbble&logoColor=red&link=https://www.dribbble.com/cahyadwii__/?tab=follow)](https://www.dribbble.com/cahyadwii__/)
 [![Behance Badge](https://img.shields.io/badge/-Lutfi%20Angga-bc?style=social&logo=Behance&logoColor=black&link=https://www.behance.net/cahyadwii__/?tab=follow)](https://www.behance.net/cahyadwii__/)
 [![Instagram Badge](https://img.shields.io/badge/-Lutfi%20Angga-red?style=social&logo=Instagram&logoColor=red&link=https://www.instagram.com/cahyadwii__/?tab=follow)](https://www.instagram.com/cahyadwii__/)
