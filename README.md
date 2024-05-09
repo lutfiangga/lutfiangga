@@ -29,8 +29,8 @@ Hello👋! I'm passionate UI/UX and Frontend Designer with a keen eye for detail
 
 | 💻 **Technology** | 🚀 **Projects** | 🌱 **Deskripsi** |
 | - | - | - |
-| ![vite](https://img.shields.io/static/v1?label=&message=Vite&color=fff&logo=vite&logoColor=yellow) | [Monitoring Trash Pickup Routes](https://runyam.vercel.app/) | Sebuah website monitoring rute pengambilan sampah di Dusun Karangber Guwosari Pajangan Bantul. Website ini dikembangkan menggunakan teknologi Vite.js. |
-| ![Code Igniter 3](https://img.shields.io/static/v1?label=&message=Code%20Igniter%203&color=fff&logo=codeIgniter&logoColor=red) | [Dusun Kersan Triwidadi Website](https://kersantriwidadi.com/) | Website Dusun Kersan Triwidadi adalah platform yang dirancang untuk memberikan akses mudah dan cepat kepada warga Dusun Kersan Triwidadi untuk mengelola data demografi dan penduduk. |
-| ![Code Igniter 3](https://img.shields.io/static/v1?label=&message=Code%20Igniter%203&color=fff&logo=codeIgniter&logoColor=red) | [Monitoring Pajak Kendaraan](https://projectereliye.uaa.great-site.net/) | Platform yang dirancang untuk memberikan akses mudah dan cepat kepada seluruh warga agar lebih mudah dalam memonitoring pajak kendaraan. |
+| ![vite](https://img.shields.io/static/v1?label=&message=Vite&color=fff&logo=vite&logoColor=yellow) | [Monitoring Trash Pickup Routes](https://runyam.vercel.app/) | A website monitoring waste collection routes in Karangber Guwosari Pajangan Bantul Hamlet. This website was developed using Vite.js technology. |
+| ![Code Igniter 3](https://img.shields.io/static/v1?label=&message=Code%20Igniter%203&color=fff&logo=codeIgniter&logoColor=red) | [Dusun Kersan Triwidadi Website](https://kersantriwidadi.com/) | The Kersan Triwidadi Hamlet website is a platform designed to provide easy and fast access for residents of Kersan Triwidadi Hamlet in managing population and population data. |
+| ![Code Igniter 3](https://img.shields.io/static/v1?label=&message=Code%20Igniter%203&color=fff&logo=codeIgniter&logoColor=red) | [Monitoring Pajak Kendaraan](https://projectereliye.uaa.great-site.net/) | A platform designed to provide easy and fast access to the entire community to facilitate vehicle tax monitoring. |
 
 Feel free to explore my projects and reach out to me if you have any questions or would like to collaborate! 😊
