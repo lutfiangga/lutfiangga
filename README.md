@@ -1,4 +1,4 @@
-# 👨‍💻 LUTFI ANGGA DWI CAHYA [@Lutfi Angga](https://lutfiangga.github.io/portofolio/)
+# 🌟 LUTFI ANGGA DWI CAHYA [@Lutfi Angga - Portofolio](https://lutfiangga.github.io/lutfiangga/)
 
 [![GitHub followers](https://img.shields.io/github/followers/lutfiangga?label=Follow&style=social)](https://github.com/lutfiangga/?tab=follow)
 [![Gmail Badge](https://img.shields.io/badge/-luthfieangga31@gmail.com-c14438?style=social&logo=Gmail&logoColor=red&link=mailto:luthfieangga31@gmail.com)](mailto:luthfieangga31@gmail.com)
@@ -7,13 +7,13 @@
 
 Hello👋! I'm passionate UI/UX and Frontend Designer with a keen eye for detail and a love for creating beautiful and intuitive user experiences. Here you'll find a collection of some of my recent projects, ranging from website designs to frontend development work.
 
-### About Me
+### 👨‍💻 About Me
 - 💼 UI/UX and Frontend Designer
 - 🎨 Passionate about creating visually appealing and user-friendly designs
 - 💻 Skilled in HTML, CSS, JavaScript, and various frontend frameworks
 - 🌱 Always learning and exploring new design trends and technologies
 
-## 🎯 Skills
+## 📚 Skills
 
 > Tools, languages, and other things that I like to work with.
 
