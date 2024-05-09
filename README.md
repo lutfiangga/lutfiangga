@@ -2,12 +2,14 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/lutfiangga?label=Follow&style=social)](https://github.com/lutfiangga/?tab=follow)
 [![Gmail Badge](https://img.shields.io/badge/-luthfieangga31@gmail.com-c14438?style=social&logo=Gmail&logoColor=red&link=mailto:luthfieangga31@gmail.com)](mailto:luthfieangga31@gmail.com)
-[![LinkedIn Badge](https://img.shields.io/badge/-Lutfi%20Angga-blue?style=social&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/luthfiee-angga/)](https://www.linkedin.com/in/luthfiee-angga/)
+[![LinkedIn Badge](https://img.shields.io/badge/-Lutfi%20Angga-blue?style=social&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/luthfiee-angga/?tab=follow)](https://www.linkedin.com/in/luthfiee-angga/)
+[![Dribbble Badge](https://img.shields.io/badge/-Lutfi%20Angga-red?style=social&logo=Dribbble&logoColor=red&link=https://www.dribbble.com/cahyadwii__/?tab=follow)](https://www.dribbble.com/cahyadwii__/)
+[![Behance Badge](https://img.shields.io/badge/-Lutfi%20Angga-bc?style=social&logo=Behance&logoColor=black&link=https://www.behance.net/cahyadwii__/?tab=follow)](https://www.behance.net/cahyadwii__/)
 [![Instagram Badge](https://img.shields.io/badge/-Lutfi%20Angga-red?style=social&logo=Instagram&logoColor=red&link=https://www.instagram.com/cahyadwii__/?tab=follow)](https://www.instagram.com/cahyadwii__/)
 
 Hello👋! I'm passionate UI/UX and Frontend Designer with a keen eye for detail and a love for creating beautiful and intuitive user experiences. Here you'll find a collection of some of my recent projects, ranging from website designs to frontend development work.
 
-### 👨‍💻 About Me
+## 👨‍💻 About Me
 - 💼 UI/UX and Frontend Designer
 - 🎨 Passionate about creating visually appealing and user-friendly designs
 - 💻 Skilled in HTML, CSS, JavaScript, and various frontend frameworks
