@@ -22,7 +22,13 @@ Hello👋! I'm passionate UI/UX and Frontend Designer with a keen eye for detail
 
 | HTML | CSS | Tailwind CSS | Bootstrap | React | Figma | Adobe XD | Corel Draw |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" height="50"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png" height="50"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" height="50"> | <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height="50" style="filter: invert(35%) sepia(91%) saturate(2287%) hue-rotate(186deg) brightness(85%) contrast(90%);"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" height="50"> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" height="50"> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-plain.svg" height="50"> | <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/LOGO-CORELDRAW-GRAPHICS-SUITE.svg" height="50"> |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" height="50" width="100%"> 
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png" height="50" width="100%"> 
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" height="50" width="100%"> 
+| <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" height="50" style="filter: invert(35%) sepia(91%) saturate(2287%) hue-rotate(186deg) brightness(85%) contrast(90%);"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" height="50" width="100%"> 
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" height="50" width="100%"> 
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-plain.svg" height="50" width="100%"> 
+| <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/LOGO-CORELDRAW-GRAPHICS-SUITE.svg" height="50" width="100%"> |
 
 ## 🎯 Recent Projects
 
