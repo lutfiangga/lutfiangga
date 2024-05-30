@@ -91,7 +91,7 @@ const itemsPerPage = 6;
   async function fetchAndDisplayPortfolio() {
     try {
       // Fetch the data from the API
-      const response = await fetch('https://portofolio-lutfi.vercel.app/api/portofolio');
+      const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee');
       
       // Check if the response is okay
       if (!response.ok) {
