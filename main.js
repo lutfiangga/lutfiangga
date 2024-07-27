@@ -76,6 +76,38 @@ async function fetchProfile() {
 fetchProfile();
 
 // Function to fetch and display skills data
+async function fetchSosmed() {
+  try {
+    const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee/sosmed');
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const sosmedData = await response.json();
+    const sosmeds = sosmedData.records;
+
+     const sosmedContainer = document.getElementById('sosmed');
+
+    sosmeds.forEach(sosmedRecord => {
+      const sosmed = sosmedRecord.fields;
+      const sosmedHtml = `
+         <a href="${sosmed.link}" target="_blank" class="profile__social-link">
+            <i class="${sosmed.icon}"></i>
+          </a>
+      `;
+
+      sosmedContainer.innerHTML += sosmedHtml;
+    });
+
+  } catch (error) {
+    console.error('There has been a problem with your fetch operation:', error);
+  }
+}
+
+// Call the function to fetch and display the skills
+fetchSosmed();
+
 async function fetchSkills() {
   try {
     const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee/skills');
