@@ -90,77 +90,86 @@ const itemsPerPage = 6;
   // Function to fetch and display portfolio data
   async function fetchAndDisplayPortfolio() {
     try {
-      // Fetch the data from the API
-      const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee');
-      
-      // Check if the response is okay
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+        // Fetch the data from the API
+        const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee');
 
-      // Convert the response to JSON
-      const data = await response.json();
+        // Check if the response is okay
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
 
-      // Sort the records by CreatedTime
-      data.records.sort((a, b) => new Date(b.createdTime) - new Date(a.createdTime));
+        // Convert the response to JSON
+        const data = await response.json();
 
-      // Loop through each portfolio record and create the HTML structure
-      data.records.forEach(item => {
-        // Create the article element
-        const article = document.createElement('article');
-        article.className = 'projects__card';
+        // Sort the records by CreatedTime
+        data.records.sort((a, b) => new Date(b.createdTime) - new Date(a.createdTime));
 
-        // Create the img element
-        const img = document.createElement('img');
-        img.src = item.fields.images;
-        img.alt = item.fields.title;
-        img.className = 'projects__img';
+        // Loop through each portfolio record and create the HTML structure
+        data.records.forEach(item => {
+            // Create the article element
+            const article = document.createElement('article');
+            article.className = 'projects__card';
 
-        // Create the modal div
-        const modalDiv = document.createElement('div');
-        modalDiv.className = 'projects__modal';
+            // Create the img element and check if the image array exists and has elements
+            const img = document.createElement('img');
+            if (item.fields.image && item.fields.image.length > 0) {
+                img.src = item.fields.image[0].url;
+                img.alt = item.fields.title;
+                img.className = 'projects__img';
+                console.log(img.src);
+            } else {
+                console.error('Image not found or image array is empty for item:', item);
+                  img.src = "https://t3.ftcdn.net/jpg/05/59/18/74/360_F_559187438_ta3MiEcUQ4VynuS9bsvkspjZ6xEYdsQ4.jpg";
+                img.alt = 'No image available';
+                img.className = 'projects__img';
+            }
 
-        // Create the inner div
-        const innerDiv = document.createElement('div');
+            // Create the modal div
+            const modalDiv = document.createElement('div');
+            modalDiv.className = 'projects__modal';
 
-        // Create the subtitle span
-        const subtitle = document.createElement('span');
-        subtitle.className = 'projects__subtitle';
-        subtitle.textContent = item.fields.category;
+            // Create the inner div
+            const innerDiv = document.createElement('div');
 
-        // Create the title h3
-        const title = document.createElement('h3');
-        title.className = 'projects__title';
-        title.textContent = item.fields.title;
+            // Create the subtitle span
+            const subtitle = document.createElement('span');
+            subtitle.className = 'projects__subtitle';
+            subtitle.textContent = item.fields.category;
 
-        // Create the link
-        const link = document.createElement('a');
-        link.href = item.fields.link;
-        link.target = '_blank';
-        link.className = 'projects__button button button__small';
-        link.innerHTML = '<i class="ri-link"></i>';
+            // Create the title h3
+            const title = document.createElement('h3');
+            title.className = 'projects__title';
+            title.textContent = item.fields.title;
 
-        // Append elements
-        innerDiv.appendChild(subtitle);
-        innerDiv.appendChild(title);
-        innerDiv.appendChild(link);
-        modalDiv.appendChild(innerDiv);
-        article.appendChild(img);
-        article.appendChild(modalDiv);
-        projectsContainer.appendChild(article);
-      });
+            // Create the link
+            const link = document.createElement('a');
+            link.href = item.fields.link;
+            link.target = '_blank';
+            link.className = 'projects__button button button__small';
+            link.innerHTML = '<i class="ri-link"></i>';
 
-      // After adding all project cards, create pagination buttons
-      const totalPages = Math.ceil(data.records.length / itemsPerPage);
-      createPaginationButtons(totalPages);
+            // Append elements
+            innerDiv.appendChild(subtitle);
+            innerDiv.appendChild(title);
+            innerDiv.appendChild(link);
+            modalDiv.appendChild(innerDiv);
+            article.appendChild(img);
+            article.appendChild(modalDiv);
+            projectsContainer.appendChild(article);
+        });
 
-      // Show the first page by default
-      showPage(1);
+        // After adding all project cards, create pagination buttons
+        const totalPages = Math.ceil(data.records.length / itemsPerPage);
+        createPaginationButtons(totalPages);
+
+        // Show the first page by default
+        showPage(1);
 
     } catch (error) {
-      console.error('There has been a problem with your fetch operation:', error);
+        console.error('There has been a problem with your fetch operation:', error);
     }
-  }
+}
+
 
   // Call the function to fetch and display the portfolio items
   fetchAndDisplayPortfolio();
