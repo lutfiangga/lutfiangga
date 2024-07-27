@@ -38,7 +38,7 @@ const itemsPerPage = 6;
   }
 
   // Function to fetch and display profile data
-async function fetchAndDisplayProfile() {
+async function fetchProfile() {
   try {
     const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee/profile');
 
@@ -73,7 +73,52 @@ async function fetchAndDisplayProfile() {
 }
 
 // Call the function to fetch and display the profile
-fetchAndDisplayProfile();
+fetchProfile();
+
+// Function to fetch and display skills data
+async function fetchSkills() {
+  try {
+    const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee/skills');
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const skillsData = await response.json();
+    const skills = skillsData.records;
+
+    // Elements to insert skills
+    const designLeftContainer = document.getElementById('design-left');
+    const designRightContainer = document.getElementById('design-right');
+    const developmentLeftContainer = document.getElementById('development-left');
+    const developmentRightContainer = document.getElementById('development-right');
+
+    skills.forEach(skillRecord => {
+      const skill = skillRecord.fields;
+      const skillHtml = `
+        <div class="skills__data">
+          <i class="ri-checkbox-circle-line"></i>
+          <div>
+            <h3 class="skills__name">${skill.skill}</h3>
+            <span class="skills__level">${skill.level}</span>
+          </div>
+        </div>
+      `;
+
+      const targetContainer = skill.kategori === 'design' 
+        ? (skill.sid % 2 === 1 ? designLeftContainer : designRightContainer)
+        : (skill.sid % 2 === 1 ? developmentLeftContainer : developmentRightContainer);
+        
+      targetContainer.innerHTML += skillHtml;
+    });
+
+  } catch (error) {
+    console.error('There has been a problem with your fetch operation:', error);
+  }
+}
+
+// Call the function to fetch and display the skills
+fetchSkills();
 
   // Function to update pagination buttons based on the current page
   function updatePaginationButtons(currentPage) {
@@ -126,7 +171,7 @@ fetchAndDisplayProfile();
   }
 
   // Function to fetch and display portfolio data
-  async function fetchAndDisplayPortfolio() {
+  async function fetchPorto() {
     try {
         // Fetch the data from the API
         const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee');
@@ -210,7 +255,7 @@ fetchAndDisplayProfile();
 }
 
   // Call the function to fetch and display the portfolio items
-  fetchAndDisplayPortfolio();
+  fetchPorto();
   
 const tabs = document.querySelectorAll('[data-target]'),
   tabContents = document.querySelectorAll('[data-content]');
