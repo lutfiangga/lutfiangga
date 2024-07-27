@@ -112,6 +112,7 @@ const itemsPerPage = 6;
 
             // Create the img element and check if the image array exists and has elements
             const img = document.createElement('img');
+             img.loading = 'lazy';
             if (item.fields.image && item.fields.image.length > 0) {
                 img.src = item.fields.image[0].url;
                 img.alt = item.fields.title;
@@ -119,7 +120,7 @@ const itemsPerPage = 6;
                 console.log(img.src);
             } else {
                 console.error('Image not found or image array is empty for item:', item);
-                  img.src = "https://t3.ftcdn.net/jpg/05/59/18/74/360_F_559187438_ta3MiEcUQ4VynuS9bsvkspjZ6xEYdsQ4.jpg";
+                img.src = "https://t3.ftcdn.net/jpg/05/59/18/74/360_F_559187438_ta3MiEcUQ4VynuS9bsvkspjZ6xEYdsQ4.jpg";
                 img.alt = 'No image available';
                 img.className = 'projects__img';
             }
