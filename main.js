@@ -37,6 +37,44 @@ const itemsPerPage = 6;
     paginationElement.innerHTML = paginationHTML;
   }
 
+  // Function to fetch and display profile data
+async function fetchAndDisplayProfile() {
+  try {
+    const response = await fetch('https://si21-portofolio.vercel.app/api/portofolio/luphiee/profile');
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const profileData = await response.json();
+    const profile = profileData.records[0].fields;
+
+    // Get all image URLs for preloading
+    const imageUrls = [
+      profile.logo[0].url,
+      profile.foto[0].url
+    ];
+
+    // Preload images
+    await preloadImages(imageUrls);
+
+    // Display profile data
+    document.getElementById('profile-name').textContent = profile.nama;
+    document.getElementById('profile-skill').textContent = profile.skills;
+    document.getElementById('profile-img').src = profile.foto[0].url;
+    document.getElementById('profile-logo').src = profile.logo[0].url;
+    document.getElementById('profile-cv').href = profile.cv[0].url;
+    document.getElementById('profile-email').href = `mailto:${profile.email}`;
+    document.getElementById('profile-wa').href = `https://api.whatsapp.com/send?phone=62${profile.whatsapp}&text=${profile.pesanWa}`;
+
+  } catch (error) {
+    console.error('There has been a problem with your fetch operation:', error);
+  }
+}
+
+// Call the function to fetch and display the profile
+fetchAndDisplayProfile();
+
   // Function to update pagination buttons based on the current page
   function updatePaginationButtons(currentPage) {
     // Get all project cards
@@ -170,7 +208,6 @@ const itemsPerPage = 6;
         console.error('There has been a problem with your fetch operation:', error);
     }
 }
-
 
   // Call the function to fetch and display the portfolio items
   fetchAndDisplayPortfolio();
