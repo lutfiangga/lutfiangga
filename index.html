@@ -1,19 +1,158 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="google-site-verification"
-      content="OdcKLzRpk5SS-APrO3vaSqBdy0TQgj4n94rsBZH9oUw"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="3;url=https://lutfiangga.my.id" />
 
-    <title>Lutfi Angga - Portofolio</title>
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="OdcKLzRpk5SS-APrO3vaSqBdy0TQgj4n94rsBZH9oUw" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="3;url=https://lutfiangga.my.id" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="" id="profile-logo" type="image/x-icon">
+
+   <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- =============== PHOSPHOR ICONS ================= -->
+  <link href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+ <link rel="stylesheet" href="style.css">
+
+  <title>Lutfi Angga - Portofolio</title>
+  <script>
       window.location.href = "https://lutfiangga.my.id";
     </script>
-  </head>
+  <script>
+    // Function to preload images
+function preloadImages(urls) {
+  return Promise.all(urls.map(url => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = url;
+      img.onload = resolve;
+      img.onerror = reject;
+    });
+  }));
+}
+  </script>
+</head>
 
-  <body></body>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="profile container">
+    <!-- Theme button -->
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+    <div class="profile__container grid">
+      <div class="profile__data">
+        <div class="profile__border">
+          <div class="profile__perfil">
+            <!-- Insert your image, according to the example size of the portfolio -->
+            <img  alt="Profile" id="profile-img">
+          </div>
+        </div>
+
+        <h2 class="profile__name" id="profile-name"></h2>
+        <h3 class="profile__profession" id="profile-skill"></h3>
+
+        <ul class="profile__social" id="sosmed">
+        </ul>
+      </div>
+
+      </div>
+
+      <div class="profile__buttons">
+        <!-- Insert your CV -->
+        <a id="profile-cv" download="" href="#" target="_blank" class="button">
+          Download CV <i class="ri-download-line"></i>
+        </a>
+
+        <div class="profile__buttons-small">
+          <!-- Insert a real number plus country code -->
+          <a href="#" id="profile-email" class="button button__small button__gray">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M104,152a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16H96A8,8,0,0,1,104,152Zm136-36v60a16,16,0,0,1-16,16H136v32a8,8,0,0,1-16,0V192H32a16,16,0,0,1-16-16V116A60.07,60.07,0,0,1,76,56h76V24a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H168V56h12A60.07,60.07,0,0,1,240,116ZM120,176V116a44,44,0,0,0-88,0v60Zm104-60a44.05,44.05,0,0,0-44-44H168v72a8,8,0,0,1-16,0V72H116.75A59.86,59.86,0,0,1,136,116v60h88Z"></path></svg>
+          </a>
+          <a id="profile-wa" href="#" target="_blank" class="button button__small button__gray">
+           <i class="ri-whatsapp-line"></i>
+          </a>
+          <!-- Insert your brand name or profile -->
+          <!-- <a href="#" class="button button__small button__gray">
+            <i class="ri-add-line"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <div class="filters container">
+      <!--=============== FILTERS TABS ===============-->
+      <ul class="filters__content">
+        <button class="filters__button filter-tab-active" data-target="#projects">
+          Projects
+        </button>
+        <button class="filters__button" data-target="#skills">
+          Skills
+        </button>
+      </ul>
+
+      <div class="filters__sections">
+        <!--=============== PROJECTS ===============-->
+        <div class="projects-filter">  
+        <div loading="lazy" class="projects__content grid filters__active" data-content id="projects">   
+        </div>
+        </div>
+        <div class="pagination" id="pagination">
+          <!-- Pagination buttons will be inserted here -->
+        </div> 
+      </div>
+      
+    <!--=============== SKILLS ===============-->
+    <div class="skills__content grid" data-content id="skills">
+
+         <div class="skills__area">
+    <h3 class="skills__title">Graphic Design</h3>
+    <div class="skills__box">
+      <div class="skills__group" id="design-left">
+        <!-- Skills with odd sid will be inserted here by JavaScript -->
+      </div>
+      <div class="skills__group" id="design-right">
+        <!-- Skills with even sid will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__area">
+    <h3 class="skills__title">Web Development</h3>
+    <div class="skills__box">
+      <div class="skills__group" id="development-left">
+        <!-- Skills with odd sid will be inserted here by JavaScript -->
+      </div>
+      <div class="skills__group" id="development-right">
+        <!-- Skills with even sid will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
+    </div>
+  </main>
+
+  <!--=============== FOOTER ===============-->
+  <footer class="footer container">
+    <span class="footer__copy">
+      &#169; Lutfi Angga Dwi Cahya
+    </span>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- =============== PHOSPHOR ICONS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/index.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="main.js"></script>
+</body>
+
 </html>
